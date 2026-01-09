@@ -2,14 +2,19 @@
 <html lang="ca">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trivial Pursuit | Inici</title>
     <link rel="stylesheet" href="css/estils.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
+
     <header>
-        <div class="logo"><img src="img/logo.png" alt="Icona"> <h1>Trivial Pursuit</h1></div>
+        <div class="logo">
+            <img src="img/logo.png" alt="Trivial Logo">
+            <h1>Trivial Pursuit</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Inici</a></li>
@@ -21,35 +26,73 @@
         </nav>
     </header>
 
-    <section style="height: 70vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/hero.jpg') center/cover; display: flex; align-items: center; justify-content: center; color: white; text-align: center;">
-        <div class="scroll-reveal">
-            <h2 style="font-size: 3.5rem; font-weight: 900;">DEMOSTRA EL QUE SAPS</h2>
-            <p style="font-size: 1.3rem;">El clàssic joc de preguntes ara a la teva pantalla.</p>
-        </div>
-    </section>
-
-    <div class="container">
-        <div style="text-align:center; margin-bottom: 50px;">
-            <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_m6cu96.json" background="transparent" speed="1" style="width: 300px; height: 300px; margin: auto;" loop autoplay></lottie-player>
-        </div>
-
-        <div class="scroll-reveal" style="text-align: center;">
-            <h2 style="font-size: 2.5rem; color: var(--primary);">L'Aventura de les Categories</h2>
-            <p>Geografia, Art, Història, Ciència, Espectacles i Esports. Aconsegueix els 6 formatgets!</p>
-        </div>
-
-        <section style="margin-top: 60px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-            <div style="background: white; padding: 30px; border-radius: 15px;">
-                <h3>Com es juga?</h3>
-                <ul style="margin: 20px 0; padding-left: 20px;">
-                    <li>Llança el dau i avança pel tauler.</li>
-                    <li>Respon la pregunta segons el color de la casella.</li>
-                    <li>Si encertes en una "formatgera", guanyes la peça.</li>
-                </ul>
-                <a href="instruccions.html" style="color: var(--accent); font-weight: bold; text-decoration: none;">Anar a Instruccions →</a>
+    <main>
+        <section style="height: 65vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/hero.jpg') center/cover; display: flex; align-items: center; justify-content: center; color: white; text-align: center;">
+            <div style="padding: 0 20px;">
+                <h2 style="font-size: 3.5rem; font-weight: 900; margin-bottom: 20px; text-transform: uppercase;">Demostra el que saps</h2>
+                <p style="font-size: 1.4rem; max-width: 800px; margin: auto; line-height: 1.6;">
+                    Benvingut a l'experiència definitiva del joc de preguntes més famós del món. Prepara't per posar a prova la teva cultura general, desafiar els teus amics i convertir-te en el mestre del saber en aquesta aventura intel·lectual sense precedents.
+                </p>
             </div>
         </section>
-    </div>
+
+        <div class="container" style="padding: 80px 20px;">
+            <div style="text-align: center; margin-bottom: 80px;">
+                <img src="img/logo.png" alt="Icona Joc" style="width: 120px; height: auto; margin-bottom: 30px; filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));">
+                <h2 style="color: var(--primary); font-size: 2.8rem; margin-bottom: 25px;">L'aventura de les categories</h2>
+                <p style="max-width: 900px; margin: auto; font-size: 1.15rem; color: #555; line-height: 1.8;">
+                    El Trivial Pursuit no és només un joc de taula, és un viatge fascinant a través del coneixement humà. Des de les profunditats dels oceans fins als confins de l'espai exterior, cada casella representa una oportunitat per aprendre alguna cosa nova. Viatja pel nostre tauler circular icònic, respon preguntes meticulosament seleccionades de sis àrees fonamentals: Geografia, Art i Literatura, Història, Ciència i Natura, Espectacles i Esports. El teu objectiu és clar: demostrar que ets el més ràpid i savi aconseguint els 6 formatgets emblemàtics per reclamar la victòria final al centre del tauler.
+                </p>
+            </div>
+
+            <section style="background: white; padding: 60px; border-radius: 30px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 50px; align-items: center;">
+                <div>
+                    <h3 style="color: var(--accent); font-size: 2.2rem; margin-bottom: 25px;">Com es juga?</h3>
+                    <p style="color: #666; margin-bottom: 20px; font-size: 1.05rem;">
+                        Submergeix-te en la mecànica clàssica que ha captivat generacions. El joc combina estratègia de moviment i agudesa mental:
+                    </p>
+                    <ul style="margin-left: 0; padding-left: 0; list-style: none; line-height: 1.8;">
+                        <li style="margin-bottom: 20px; display: flex; align-items: flex-start;">
+                            <span class="material-icons" style="color: var(--accent); margin-right: 15px;">casino</span>
+                            <span><strong>Llança el dau i mou-te amb saviesa:</strong> Tira el dau per desplaçar la teva fitxa pel tauler. Pots triar la direcció per apropar-te a les caselles de formatget que et falten, evitant les zones on els teus oponents tenen avantatge.</span>
+                        </li>
+                        <li style="margin-bottom: 20px; display: flex; align-items: flex-start;">
+                            <span class="material-icons" style="color: var(--accent); margin-right: 15px;">quiz</span>
+                            <span><strong>Respon amb precisió:</strong> Cada color correspon a una categoria diferent. Si encertes la pregunta, mantens el teu torn i tornes a tirar. L'encert és la clau per avançar ràpidament i bloquejar els teus rivals.</span>
+                        </li>
+                        <li style="margin-bottom: 20px; display: flex; align-items: flex-start;">
+                            <span class="material-icons" style="color: var(--accent); margin-right: 15px;">emoji_events</span>
+                            <span><strong>Guanya la partida:</strong> Completa el teu formatger amb els 6 colors diferents. Un cop ple, dirigeix-te al centre del tauler per respondre una pregunta final triada pels teus oponents i coronar-te com el guanyador absolut.</span>
+                        </li>
+                    </ul>
+                    <br>
+                    <a href="instruccions.html" class="btn-primary" style="background: var(--primary); color: white; padding: 15px 35px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block; transition: 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">Llegir instruccions detallades</a>
+                </div>
+                <div style="text-align: center;">
+                    <img src="img/captura1.jpg" alt="Tauler de joc Trivial" style="width: 100%; max-width: 500px; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.15);">
+                    <p style="margin-top: 20px; font-style: italic; color: #888; font-size: 0.9rem;">Imatge del tauler clàssic i els seus components</p>
+                </div>
+            </section>
+
+            <section style="margin-top: 80px; text-align: center; border-top: 1px solid #eee; padding-top: 60px;">
+                <h3 style="color: var(--primary); font-size: 2rem; margin-bottom: 30px;">Sabies que...?</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                    <div style="padding: 20px;">
+                        <span class="material-icons" style="font-size: 40px; color: #3498db; margin-bottom: 15px;">public</span>
+                        <p>El Trivial Pursuit s'ha traduït a més de <strong>17 idiomes</strong> diferents i es ven a més de <strong>26 països</strong>.</p>
+                    </div>
+                    <div style="padding: 20px;">
+                        <span class="material-icons" style="font-size: 40px; color: #e74c3c; margin-bottom: 15px;">groups</span>
+                        <p>S'han venut més de <strong>100 milions</strong> d'unitats des del seu llançament oficial als anys 80.</p>
+                    </div>
+                    <div style="padding: 20px;">
+                        <span class="material-icons" style="font-size: 40px; color: #f1c40f; margin-bottom: 15px;">auto_awesome</span>
+                        <p>Existeixen desenes d'edicions especials, des de <i>Star Wars</i> fins a edicions locals de ciutats.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 
     <footer>
         <div class="social-icons">
@@ -60,5 +103,6 @@
         </div>
         <p>© 2026 Trivial Pursuit - Projecte Web DAM/DAW - Tots els drets reservats</p>
     </footer>
+
 </body>
 </html>

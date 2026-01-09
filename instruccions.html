@@ -2,57 +2,122 @@
 <html lang="ca">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instruccions | Trivial Pursuit</title>
     <link rel="stylesheet" href="css/estils.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+
     <header>
-        <div class="logo"><img src="img/logo.png" alt="Icona"> <h1>Trivial Pursuit</h1></div>
-        <nav><ul>
-            <li><a href="index.html">Inici</a></li>
-            <li><a href="instruccions.html">Instruccions</a></li>
-            <li><a href="historia.html">Història</a></li>
-            <li><a href="contacte.html">Contacte</a></li>
-            <li><a href="about.html">About Us</a></li>
-        </ul></nav>
+        <div class="logo">
+            <img src="img/logo.png" alt="Trivial Logo">
+            <h1>Trivial Pursuit</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="instruccions.html">Instruccions</a></li>
+                <li><a href="historia.html">Història</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container">
-        <h2 style="margin-bottom: 30px;">Guia de Joc</h2>
+    <main class="container" style="padding-top: 40px;">
+        <h2 style="text-align: center; margin-bottom: 40px; color: var(--primary); font-size: 2.5rem;">Com es juga al Trivial?</h2>
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-bottom: 60px;">
-            <div>
-                <img src="img/captura1.jpg" alt="Preparació" style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
-                <h4>1. Preparació</h4>
-                <p>Cada jugador tria una fitxa circular buida i la col·loca al centre del tauler.</p>
+        <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px;">
+            <div style="background: #fff; padding: 20px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                <img src="img/captura1.jpg" alt="Preparació" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+                <h4 style="color: var(--primary); margin-bottom: 10px;">1. Preparació del tauler</h4>
+                <p style="font-size: 0.95rem; line-height: 1.6;">Cada jugador tria una fitxa circular buida i la col·loca a la casella central. Es barregen les cartes i es decideix qui comença llançant el dau. L'objectiu és moure's per les branques fins a les caselles de formatget.</p>
             </div>
-            <div>
-                <img src="img/captura2.jpg" alt="Preguntes" style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
-                <h4>2. Les Preguntes</h4>
-                <p>Quan caus en una casella, el jugador de la teva dreta llegeix la pregunta del color corresponent.</p>
+
+            <div style="background: #fff; padding: 20px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                <img src="img/captura2.jpg" alt="Preguntes" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+                <h4 style="color: var(--primary); margin-bottom: 10px;">2. Dinàmica de preguntes</h4>
+                <p style="font-size: 0.95rem; line-height: 1.6;">Quan caus en una casella, el jugador de la teva dreta llegeix la pregunta del color corresponent. Si l'encertes, tornes a tirar; si falles, el torn passa al següent jugador. Només guanyes formatgets en les caselles especials situades als extrems.</p>
             </div>
+        </section>
+
+        <h3 style="text-align: center; margin-bottom: 40px;">Mecàniques per categoria</h3>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; margin-bottom: 60px;">
+            
+            <div class="card-container" style="width: 100%; height: 250px;">
+                <div class="card">
+                    <div class="card-front" style="background-color: #3498db; border: none;">
+                        <span class="material-icons" style="font-size: 40px; margin-bottom: 10px;">public</span>
+                        <h4>Geografia</h4>
+                    </div>
+                    <div class="card-back" style="background-color: #2980b9; padding: 15px;">
+                        <p style="font-size: 0.85rem;">Troba el formatget blau. Les preguntes inclouen capitals, rius, muntanyes i curiositats de països d'arreu del món.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container" style="width: 100%; height: 250px;">
+                <div class="card">
+                    <div class="card-front" style="background-color: #e91e63; border: none;">
+                        <span class="material-icons" style="font-size: 40px; margin-bottom: 10px;">videocam</span>
+                        <h4>Espectacles</h4>
+                    </div>
+                    <div class="card-back" style="background-color: #c2185b; padding: 15px;">
+                        <p style="font-size: 0.85rem;">Cinema, televisió i música. Hauràs de recordar actors, premis Oscar i títols de cançons famoses per guanyar aquest quesito.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container" style="width: 100%; height: 250px;">
+                <div class="card">
+                    <div class="card-front" style="background-color: #f1c40f; border: none; color: #333;">
+                        <span class="material-icons" style="font-size: 40px; margin-bottom: 10px;">history_edu</span>
+                        <h4>Història</h4>
+                    </div>
+                    <div class="card-back" style="background-color: #f39c12; color: #fff; padding: 15px;">
+                        <p style="font-size: 0.85rem;">Esdeveniments històrics, batalles i personatges cèlebres que han marcat el curs de la humanitat a través dels segles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container" style="width: 100%; height: 250px;">
+                <div class="card">
+                    <div class="card-front" style="background-color: #e67e22; border: none;">
+                        <span class="material-icons" style="font-size: 40px; margin-bottom: 10px;">palette</span>
+                        <h4>Art i Literatura</h4>
+                    </div>
+                    <div class="card-back" style="background-color: #d35400; padding: 15px;">
+                        <p style="font-size: 0.85rem;">Autors clàssics, pintors famosos i obres literàries imprescindibles. Un repte per als amants de la cultura clàssica i moderna.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <h3>Mecàniques Especials</h3>
-        <div class="card-container">
-            <div class="card">
-                <div class="card-front">
-                    <h4>Posa el ratolí aquí</h4>
-                </div>
-                <div class="card-back">
-                    <p><strong>Tira de nou:</strong> Si caus a la casella blanca, pots tornar a llançar el dau immediatament!</p>
-                </div>
-            </div>
-        </div>
-    </div>
+        <section style="background: var(--primary); color: white; padding: 40px; border-radius: 20px; text-align: center; margin-bottom: 40px;">
+            <h3>Com guanyar la partida?</h3>
+            <p style="margin-top: 15px; opacity: 0.9; max-width: 700px; margin-left: auto; margin-right: auto;">
+                Un cop tinguis els 6 formatgets, has de tornar a la casella central. Els teus rivals triaran una categoria final: si encertes la pregunta, et convertiràs en el mestre del Trivial!
+            </p>
+        </section>
+    </main>
 
     <footer>
-        <div class="social-icons">
-            <a href="#"><span class="material-icons">facebook</span></a>
-            <a href="#"><span class="material-icons">camera_alt</span></a>
+        <div class="footer-container">
+            <div class="social-icons" style="display: flex; justify-content: flex-end; gap: 15px; margin-bottom: 10px;">
+                <a href="#"><span class="material-icons">facebook</span></a>
+                <a href="#"><span class="material-icons">camera_alt</span></a>
+                <a href="#"><span class="material-icons">public</span></a>
+                <a href="#"><span class="material-icons">videocam</span></a>
+            </div>
+            <p style="text-align: right; margin: 0; font-size: 0.9rem;">
+                © 2026 Trivial Pursuit - Projecte Web - Tots els drets reservats
+            </p>
         </div>
-        <p>© 2026 Trivial Pursuit</p>
     </footer>
+
 </body>
 </html>
