@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Trivial Pursuit | Inici</title>
+    <link rel="stylesheet" href="css/estils.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="img/logo.png" alt="Icona"> <h1>Trivial Pursuit</h1></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="instruccions.html">Instruccions</a></li>
+                <li><a href="historia.html">Història</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section style="height: 70vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/hero.jpg') center/cover; display: flex; align-items: center; justify-content: center; color: white; text-align: center;">
+        <div class="scroll-reveal">
+            <h2 style="font-size: 3.5rem; font-weight: 900;">DEMOSTRA EL QUE SAPS</h2>
+            <p style="font-size: 1.3rem;">El clàssic joc de preguntes ara a la teva pantalla.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div style="text-align:center; margin-bottom: 50px;">
+            <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_m6cu96.json" background="transparent" speed="1" style="width: 300px; height: 300px; margin: auto;" loop autoplay></lottie-player>
+        </div>
+
+        <div class="scroll-reveal" style="text-align: center;">
+            <h2 style="font-size: 2.5rem; color: var(--primary);">L'Aventura de les Categories</h2>
+            <p>Geografia, Art, Història, Ciència, Espectacles i Esports. Aconsegueix els 6 formatgets!</p>
+        </div>
+
+        <section style="margin-top: 60px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            <div style="background: white; padding: 30px; border-radius: 15px;">
+                <h3>Com es juga?</h3>
+                <ul style="margin: 20px 0; padding-left: 20px;">
+                    <li>Llança el dau i avança pel tauler.</li>
+                    <li>Respon la pregunta segons el color de la casella.</li>
+                    <li>Si encertes en una "formatgera", guanyes la peça.</li>
+                </ul>
+                <a href="instruccions.html" style="color: var(--accent); font-weight: bold; text-decoration: none;">Anar a Instruccions →</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#"><span class="material-icons">facebook</span></a>
+            <a href="#"><span class="material-icons">camera_alt</span></a>
+            <a href="#"><span class="material-icons">public</span></a>
+            <a href="#"><span class="material-icons">videocam</span></a>
+        </div>
+        <p>© 2026 Trivial Pursuit - Projecte Web DAM/DAW - Tots els drets reservats</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us | Trivial Pursuit</title>
+    <link rel="stylesheet" href="css/estils.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Trivial Logo">
+            <h1>Trivial Pursuit</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="instruccions.html">Instruccions</a></li>
+                <li><a href="historia.html">Història</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container" style="text-align: center;">
+        <h2 style="margin-bottom: 20px;">Sobre nosaltres</h2>
+        <p style="font-size: 1.2rem; color: var(--primary); font-weight: 600;">Equip de Desenvolupament Web - DAM/DAW</p>
+        
+        <section style="margin: 40px auto; max-width: 600px; background: white; padding: 30px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+            <div style="display: flex; justify-content: space-around; gap: 20px;">
+                <div class="participant">
+                    <span class="material-icons" style="font-size: 60px; color: var(--blue);">account_circle</span>
+                    <h3>Ariadna Martinez</h3>
+                    <p>Disseny i Maquetació</p>
+                </div>
+                <div class="participant">
+                    <span class="material-icons" style="font-size: 60px; color: var(--accent);">account_circle</span>
+                    <h3>Erik Catalan</h3>
+                    <p>Desenvolupament CSS</p>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top: 50px;">
+            <h3 style="margin-bottom: 20px;">El Joc en funcionament</h3>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 800px; margin: auto; border-radius: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.2);">
+                <iframe 
+                    src="https://www.youtube.com/embed/S_8V1fL0v_0" 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#"><span class="material-icons">facebook</span></a>
+            <a href="#"><span class="material-icons">camera_alt</span></a>
+            <a href="#"><span class="material-icons">public</span></a>
+            <a href="#"><span class="material-icons">videocam</span></a>
+        </div>
+        <p>© 2026 Trivial Pursuit - Projecte Web - Tots els drets reservats</p>
+    </footer>
+</body>
+</html>

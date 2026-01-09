@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacte | Trivial Pursuit</title>
+    <link rel="stylesheet" href="css/estils.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo"><h1>Trivial Pursuit</h1></div>
+        <nav><ul><li><a href="index.html">Inici</a></li><li><a href="instruccions.html">Instruccions</a></li><li><a href="historia.html">Història</a></li><li><a href="contacte.html">Contacte</a></li><li><a href="about.html">About Us</a></li></ul></nav>
+    </header>
+
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 40px;">Contacta amb Nosaltres</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px;">
+            <div>
+                <h4>Dades de Contacte</h4>
+                <p style="margin: 15px 0;"><span class="material-icons" style="vertical-align: middle;">place</span> Carrer del Coneixement, 42, Barcelona</p>
+                <p style="margin: 15px 0;"><span class="material-icons" style="vertical-align: middle;">phone</span> <a href="tel:+34931112233" style="color: inherit;">931 112 233</a></p>
+                <p style="margin: 15px 0;"><span class="material-icons" style="vertical-align: middle;">email</span> <a href="mailto:suport@trivialweb.cat" style="color: inherit;">suport@trivialweb.cat</a></p>
+                
+                <div style="margin-top: 20px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.464161044458!2d2.1743558!3d41.3850639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f260e15641%3A0x6a0555306e987f0b!2sPlaca%20de%20Catalunya!5e0!3m2!1sca!2ses!4v1700000000000!5m2!1sca!2ses" width="100%" height="250" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <form>
+                <input type="text" placeholder="El teu Nom" required minlength="3">
+                
+                <input type="tel" placeholder="Telèfon (9 dígits)" pattern="[679][0-9]{8}" required>
+                
+                <input type="email" placeholder="El teu Correu Electrònic" required>
+                
+                <textarea placeholder="Explica'ns la teva petició..." rows="5" required></textarea>
+                
+                <button type="submit">ENVIAR MISSATGE</button>
+            </form>
+        </div>
+    </div>
+
+    <footer><p>© 2026 Trivial Pursuit</p></footer>
+</body>
+</html>
