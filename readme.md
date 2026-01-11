@@ -1,0 +1,1 @@
+Ariadna Martinez Marin i Erik Catalan Rodriguez
